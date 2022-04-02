@@ -1,0 +1,12 @@
+stages:
+  train:
+    cmd: python3 train.py
+    deps:
+    - dataset/
+    params:
+    - params.yaml:
+    outs:
+    - printed-price-ocr-base
+    metrics:
+    - metrics.json:
+        cache: false

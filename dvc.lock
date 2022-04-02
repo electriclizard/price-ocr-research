@@ -1,0 +1,32 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python3 train.py
+    deps:
+    - path: dataset/
+      md5: 08a72856d8fae1932bad834e4533cf41.dir
+      size: 277570897
+      nfiles: 9735
+    params:
+      params.yaml:
+        dataset:
+          train_filepath: dataset/train_annots.txt
+          test_filepath: dataset/test_annots.txt
+          images_path: dataset/price_images/
+          train_size: 0.7
+        model:
+          model_name: microsoft/trocr-base-printed
+          max_length: 15
+        train:
+          epochs: 2
+          batch_size: 1
+          learning_rate: 1e-07
+          save_name: printed-price-ocr-base
+    outs:
+    - path: metrics.json
+      md5: 5da38093852d212902954e37b5c98d4e
+      size: 201
+    - path: printed-price-ocr-base
+      md5: a071e71b06a3430554cc891f12477f6a.dir
+      size: 1335855384
+      nfiles: 2
