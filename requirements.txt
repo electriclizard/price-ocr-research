@@ -1,0 +1,17 @@
+jupyter
+dvc[gdrive]
+numpy
+torch
+torchvision
+timm==0.4.5
+pandas
+opencv-python
+matplotlib
+scikit-learn
+sentencepiece
+protobuf
+natsort
+tensorboard
+nltk
+h5py
+jiwer
