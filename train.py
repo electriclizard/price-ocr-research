@@ -33,7 +33,7 @@ def compute_metrics(pred):
     cer = cer_metric.compute(predictions=pred_str, references=label_str)
     st = {"cer": cer, "string_accuracy": (np.array(pred_str) == np.array(label_str)).mean()}
     with open('metrics.json', 'a') as file:
-        file.write(f"{st}")
+        file.write(f"{st}\n")
     return st
 
 
