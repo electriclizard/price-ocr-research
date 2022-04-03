@@ -13,7 +13,7 @@ stages:
           train_filepath: dataset/train_annots.txt
           test_filepath: dataset/test_annots.txt
           images_path: dataset/price_images/
-          train_size: 1.0
+          train_size: 0.75
         model:
           model_name: microsoft/trocr-base-printed
           max_length: 15
@@ -24,9 +24,9 @@ stages:
           save_name: printed-price-ocr-base
     outs:
     - path: metrics.json
-      md5: 1e28fe9f30d78d1f8c51afba9ad99894
-      size: 2099
+      md5: 77d264a7944a7c6251080530623a9df2
+      size: 2112
     - path: printed-price-ocr-base
-      md5: f8b85a30f06e5798a1d9325f68584a6b.dir
+      md5: 9298fd9a53ff2db12547ed740012edd1.dir
       size: 1335855384
       nfiles: 2
