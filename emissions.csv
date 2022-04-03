@@ -1,3 +1,4 @@
 timestamp,experiment_id,project_name,duration,emissions,energy_consumed,country_name,country_iso_code,region,on_cloud,cloud_provider,cloud_region
 2022-04-02T12:19:17,2255f85b-dcca-48d3-a697-80ccaa5a0661,codecarbon,3474.1913270950317,0.12435143430297879,0.1743336168085114,Russia,RUS,chelyabinsk oblast,N,,
 2022-04-02T14:39:42,b32846d2-357d-418f-b86a-1dc119a8627b,codecarbon,2706.189558982849,0.09694096347432905,0.13590570043772102,Russia,RUS,chelyabinsk oblast,N,,
+2022-04-03T05:44:04,dd6633fb-d477-4e04-89fe-ec3cc860803f,codecarbon,51978.86423945427,1.8630511676023715,2.6118914523823977,Russia,RUS,chelyabinsk oblast,N,,

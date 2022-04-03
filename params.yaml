@@ -2,10 +2,10 @@ dataset:
   train_filepath: dataset/train_annots.txt
   test_filepath: dataset/test_annots.txt
   images_path: dataset/price_images/
-  train_size: 0.7
+  train_size: 1.0
 
 train:
-  epochs: 2
+  epochs: 30
   batch_size: 1
   learning_rate: 1e-7
   save_name: printed-price-ocr-base
