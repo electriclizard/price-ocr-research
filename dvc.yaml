@@ -1,0 +1,14 @@
+stages:
+  train:
+    cmd: docker run --gpus all -v $PWD/:/usr/src/ -p 8888:8888 aocr_exp python run.py
+    deps:
+    - attention-ocr
+    - dataset/
+    params:
+    - params.yaml:
+      - train
+    outs:
+    - price-aocr-export-model
+    metrics:
+    - aocr.log:
+        cache: false

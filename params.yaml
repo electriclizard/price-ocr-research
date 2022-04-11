@@ -1,0 +1,15 @@
+dataset:
+  train_filepath: dataset/training.tfrecords
+  test_filepath: dataset/test.tfrecords
+  train_size: 1.0
+
+train:
+  epochs: 2
+  batch_size: 10
+  learning_rate: 1.0
+  save_name: printed-price-ocr-base
+
+model: 
+  model_dir: price-aocr
+  exported_model: price-aocr-export-model
+  steps-per-checkpoint: 2000

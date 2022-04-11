@@ -1,4 +1,7 @@
-jupyter
+# jupyter
+# tensorflow-gpu==1.15.0
 dvc[gdrive]
 pandas
 tqdm
+pyyaml
+pillow==4.1.1
