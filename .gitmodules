@@ -1,0 +1,3 @@
+[submodule "attention-ocr"]
+	path = attention-ocr
+	url = git@github.com:electriclizard/attention-ocr.git
