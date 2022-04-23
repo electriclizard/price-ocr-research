@@ -1,28 +1,28 @@
 schema: '2.0'
 stages:
   train:
-    cmd: docker run --gpus all -v $PWD/:/usr/src/ -p 8888:8888 aocr_exp python run.py
+    cmd: python run.py
     deps:
-    - path: attention-ocr
-      md5: f471dfecc767f8089c36a4fe1aea8786.dir
-      size: 102785
-      nfiles: 23
     - path: dataset/
-      md5: 09fe3f4caf41e9ac340021471356dc64.dir
-      size: 555041268
+      md5: f186237a8dd540efd40571d4f6a70540.dir
+      size: 554690880
       nfiles: 9737
     params:
       params.yaml:
+        dataset:
+          train_filepath: dataset/training.tfrecords
+          test_filepath: dataset/test.tfrecords
+          train_size: 1.0
+        model:
+          model_dir: price-aocr
+          exported_model: price-aocr-export-model
+          steps-per-checkpoint: 2000
         train:
-          epochs: 3
+          epochs: 2
           batch_size: 10
-          learning_rate: 1e-07
+          learning_rate: 1.0
           save_name: printed-price-ocr-base
     outs:
     - path: aocr.log
-      md5: b5c8342d795e5e5b04857aeb4ea18a49
-      size: 14080
-    - path: price-aocr
-      md5: 4f9fd4a14c55d3265c5f2e7ecd58012b.dir
-      size: 108406715
-      nfiles: 5
+      md5: 2e5bd4152065e072bea11b2cf5495589
+      size: 43274
