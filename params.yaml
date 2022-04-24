@@ -4,12 +4,12 @@ dataset:
   train_size: 1.0
 
 train:
-  epochs: 2
-  batch_size: 10
+  epochs: 1000
+  batch_size: 60
   learning_rate: 1.0
   save_name: printed-price-ocr-base
 
 model: 
   model_dir: price-aocr
   exported_model: price-aocr-export-model
-  steps-per-checkpoint: 2000
+  steps-per-checkpoint: 5000

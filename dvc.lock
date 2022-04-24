@@ -16,13 +16,13 @@ stages:
         model:
           model_dir: price-aocr
           exported_model: price-aocr-export-model
-          steps-per-checkpoint: 2000
+          steps-per-checkpoint: 5000
         train:
-          epochs: 2
-          batch_size: 10
+          epochs: 1000
+          batch_size: 60
           learning_rate: 1.0
           save_name: printed-price-ocr-base
     outs:
     - path: aocr.log
-      md5: 2e5bd4152065e072bea11b2cf5495589
-      size: 43274
+      md5: 4f3cec6684acfd807bcd17f355cce671
+      size: 745838
